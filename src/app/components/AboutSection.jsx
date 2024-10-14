@@ -10,11 +10,11 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>JavaScript</li>
+        <li>TypeScript</li>
         <li>ReactJS</li>
         <li>NextJS</li>
-        <li>Firebase</li>
-        <li>Digital Image Processing using Python</li>
-        <li>Java</li>
+        <li>Nodejs</li>
+        <li>C/C++</li>
       </ul>
     ),
   },
@@ -23,8 +23,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Ramjas School, Delhi</li>
-        <li>Shiv Nadar University, Delhi NCR</li>
+        <li>Aligarh Muslim University (CGPA - 8.225/10.0) </li>
       </ul>
     ),
   },
@@ -33,9 +32,9 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>Meta certified Front End Developer</li>
-        <li>Certification in Supervised Machine Learning: Regression and Classification, by DeepLearning.AI </li>
-        <li>Certification in AI with ML by IIT ROORKEE</li>
+        <li>Advanced JavaScript - Udemy</li>
+        <li>React Marathon : 70 Hands-on React Web Development Projects-Udemy</li>
+        
       </ul>
     ),
   },
@@ -60,8 +59,7 @@ const AboutSection = () => {
           <p className="text-base lg:text-lg">
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
+            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL, HTML, CSS, and Git. I am a quick learner and I am always
             looking to expand my knowledge and skill set. I am a team player and
             I am excited to work with others to create amazing applications.
           </p>

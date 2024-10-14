@@ -24,13 +24,13 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
               sequence={[
-                "Kunal Passan",
+                "Furquan Anwer",
                 2000,
-                "AI Developer", //ai developer features coming soon
+                "Frontend developer", //ai developer features coming soon
                 2000,
-                "UI/UX Designer",
+                "Full-Stack developer",
                 2000,
-                "Data Analyst",
+                "Backend developer",
                 2000,
               ]}
 
@@ -40,7 +40,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          Innovative Next.js developer crafting high-performance web solutions in Gurugram, Haryana. Specializing in websites that elevate online presence and drive business growth.
+          Innovative frontend developer skilled in React and Next.js, dedicated to crafting high-performance web solutions that enhance user experience and drive business growth. Proficient in designing responsive and engaging interfaces, I also possess a solid foundation in backend development with Node.js. Additionally, I have experience with C/C++ programming, enabling me to tackle complex technical challenges effectively. Passionate about leveraging my skills to create impactful digital products.
           </p>
           <div>
             <Link
@@ -49,7 +49,7 @@ const HeroSection = () => {
               My Projects
             </Link>
             <Link
-              href="resume_ats.pdf"  target="_blank"
+              href="Furquan_Anwer_.pdf"  target="_blank"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">

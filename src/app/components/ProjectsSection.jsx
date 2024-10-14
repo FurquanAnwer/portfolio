@@ -7,76 +7,41 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Flix",
-    description: "Flix, a movie experience website, where all the latest movies from netflix are available to choose from.",
+    title: "Holiday Inn",
+    description: "A Hotel Internal Management App built using React.js and Styled Components, with Supabase for backend functionality. It optimizes data fetching with React Query and manages state using Context API.",
     image: "/images/project_1.png",
-    tag: ["All Projects", "Web Projects"],
-    gitUrl: "https://github.com/kazekunal/flix",
-    previewUrl: "https://flix-2gslfzebm-kazekunal.vercel.app/",
+    tag: ["All Projects", "Frontend Projects"],
+    gitUrl: "https://github.com/FurquanAnwer/Hotel-Internal-Management-App",
+    previewUrl: "https://hotel-internal-management-app.vercel.app/login",
   },
   {
     id: 2,
-    title: "PharmLink+",
-    description: "The future of secure healthcare, our blockchain-powered system is revolutionizing medical prescription management, eliminating fraud and ensuring patient safety with unparalleled transparency and accountability.",
+    title: "ShopMart",
+    description: "An e-commerce application built using Next.js, featuring a responsive design and user authentication. It includes an Add to Cart functionality, allowing users to easily manage their shopping experience.",
     image: "/images/project_2.png",
-    tag: ["All Projects", "Web Projects"],
-    gitUrl: "https://github.com/kazekunal/hackathon",
-    previewUrl: "/",
+    tag: ["All Projects", "Frontend Projects"],
+    gitUrl: "https://github.com/FurquanAnwer/Shopmart_hiring",
+    previewUrl: "https://hiring-challenge-lake.vercel.app",
   },
   {
     id: 3,
-    title: "BuzzJob",
-    description: "BuzzJobs is a job portal built using Next.js and SQL, designed to streamline the job search process for both job seekers and employers.",
+    title: "Youtube Clone",
+    description: "A YouTube clone built using React, offering video uploading, viewing, and commenting features in a user-friendly interface. The application utilizes a modern design and efficient state management to enhance the user experience while browsing and interacting with content.",
     image: "/images/project_3.png",
-    tag: ["All Projects", "Web Projects"],
-    gitUrl: "https://github.com/kazekunal/buzz_job",
-    previewUrl: "https://buzzjob.vercel.app/",
+    tag: ["All Projects", "Frontend Projects"],
+    gitUrl: "https://github.com/FurquanAnwer/youtube-clone",
+    previewUrl: "https://youtube-clone-lw24.vercel.app/",
   },
   {
     id: 4,
-    title: "Breeze'24 - Circa'72, University Fest",
-    description: "A full stack application where attendees could effortlessly register and make payments for various events for my University's Festival. Focusing on the intricate development of distinct user roles, the e-commerce functionality, and the robust backend architecture.",
+    title: "React Quiz",
+    description: "A React quiz application leveraging the useReducer hook for state management, providing a dynamic and interactive user experience. Users can answer questions, track their progress, and receive instant feedback on their performance.",
     image: "/images/project_4.png",
-    tag: ["All Projects", "Web Projects"],
-    gitUrl: "https://github.com/thearyanthegr8/Breeze2024",
-    previewUrl: "https://www.instagram.com/p/C2acIihvtY6/",
+    tag: ["All Projects", "Frontend Projects"],
+    gitUrl: "https://github.com/FurquanAnwer/ReactQuiz",
+    previewUrl: "https://react-quiz-bice-ten.vercel.app/",
   },
-  {
-    id: 5,
-    title: "sentiment_Analysis",
-    description: "We've conducted a sentiment analysis on the dataset, which classifies each tweet into categories such as positive, negative, or neutral sentiment. The analysis provides valuable insights into the public's emotional responses and opinions regarding the G20 Summit.",
-    image: "/images/project_5.png",
-    tag: ["All Projects", "ML Projects"],
-    gitUrl: "https://github.com/kazekunal/sentiment_Analysis",
-    previewUrl: "https://drive.google.com/uc?id=1sD1OjdYvKoPuZMyPe_bBi0CqBb42OrkR&export=download",
-  },
-  {
-    id: 6,
-    title: "Finvest, finance-tech club",
-    description: "Welcome to the exciting world of Finvest, where finance becomes an exhilarating adventure rather than a daunting mystery! We're not your average finance club– at Finvest, we're on a mission to unleash the power of financial literacy and make it accessible to everyone.",
-    image: "/images/project_6.png",
-    tag: ["All Projects", "Web Projects"],
-    gitUrl: "https://github.com/kazekunal/finvest-website",
-    previewUrl: "https://finvestsnu.vercel.app/",
-  },
-  {
-    id: 7,
-    title: "Sales Forecast",
-    description: "This project utilizes Linear Regression, a fundamental machine learning algorithm, to predict the number of items sold in various stores. We use a comprehensive training dataset that includes 900,000 data points, each detailing the date, item, store, and the quantity of items sold. The goal is to provide accurate sales forecasts that can help in inventory management and marketing strategies.",
-    image: "/images/project_7.png",
-    tag: ["All Projects", "ML Projects"],
-    gitUrl: "https://github.com/kazekunal/Sales_forecast",
-    previewUrl: "/",
-  },
-  {
-    id: 8,
-    title: "Handsign-Recognition",
-    description: "This project implements a real-time hand gesture recognition system using a webcam. The system segments the hand region from the background and displays the thresholded hand image and the contours of the hand.",
-    image: "/images/project_8.jpg",
-    tag: ["All Projects", "ML Projects"],
-    gitUrl: "https://github.com/kazekunal/Handsign-Recognition",
-    previewUrl: "https://drive.google.com/file/d/1OpNc-y5iGxpcQm_SUkthlCeZW4t91YMD/view?usp=drivesdk",
-  }
+
 ];
 
 const ProjectsSection = () => {
@@ -110,14 +75,10 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web Projects"
+          name="Frontend Projects"
           isSelected={tag === "Web Projects"}
         />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="ML Projects"
-          isSelected={tag === "ML Projects"}
-        />
+
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
