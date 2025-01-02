@@ -25,13 +25,14 @@ const projectsData = [
     previewUrl: "https://youtube-clone-lw24.vercel.app/",
   },
   {
+    
     id: 3,
     title: "Holiday Inn",
     description: "A Hotel Internal Management App built using React.js and Styled Components, with Supabase for backend functionality. It optimizes data fetching with React Query and manages state using Context API.",
     image: "/images/project_1.png",
     tag: ["All Projects", "Frontend Projects"],
     gitUrl: "https://github.com/FurquanAnwer/Hotel-Internal-Management-App",
-    previewUrl: "https://hotel-internal-management-app.vercel.app/login",
+    previewUrl: "https://github.com/FurquanAnwer/Hotel-Internal-Management-App",
   },
 
   {
