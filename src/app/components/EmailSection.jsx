@@ -19,15 +19,11 @@ const EmailSection = () => {
     const JSONdata = JSON.stringify(data);
     const endpoint = "/api/send";
 
-    // Form the request for sending data to the server.
     const options = {
-      // The method is POST because we are sending data.
       method: "POST",
-      // Tell the server we're sending JSON.
       headers: {
         "Content-Type": "application/json",
       },
-      // Body of the request is the JSON data we created above.
       body: JSONdata,
     };
 
@@ -43,31 +39,29 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-8 gap-4 relative"
+      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
-      <div className="">
+      <div className="glass-card p-6 rounded-lg">
         <h5 className="text-xl font-bold text-white my-2">
           Let&apos;s Connect
         </h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md">
-          {" "}
-          I&apos;m currently looking for new opportunities, my inbox is always
-          open. Whether you have a question or just want to say hi, I&apos;ll
-            get back to you!
+        <p className="text-white/70 mb-4 max-w-md">
+          I&apos;m currently looking for new opportunities. Whether you have a question or just want to say hi, I&apos;ll
+          get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/FurquanAnwer">
+          <Link href="https://github.com/FurquanAnwer" className="transition-transform hover:scale-110">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="https://www.linkedin.com/in/furquananwer/">
+          <Link href="https://www.linkedin.com/in/furquananwer/" className="transition-transform hover:scale-110">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
-          <Link href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlGTtrnWzNVHbcZKhrNsXZzsLWVjSmHSmfSgWJnzjszMNjffBwtxBCWLBmzDfNGnbpSmSq">
+          <Link href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlGTtrnWzNVHbcZKhrNsXZzsLWVjSmHSmfSgWJnzjszMNjffBwtxBCWLBmzDfNGnbpSmSq" className="transition-transform hover:scale-110">
             <Image src={MailIcon} alt="Mail Icon" />
           </Link>
         </div>
       </div>
-      <div>
+      <div className="glass-card p-6 rounded-lg">
         {emailSubmitted ? (
           <p className="text-green-500 text-sm mt-2">
             Email sent successfully!
@@ -86,7 +80,7 @@ const EmailSection = () => {
                 type="email"
                 id="email"
                 required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                className="bg-white/5 border border-white/10 placeholder-white/30 text-white text-sm rounded-lg block w-full p-2.5 focus:ring-purple-500 focus:border-purple-500"
                 placeholder="abc@gmail.com"
               />
             </div>
@@ -102,7 +96,7 @@ const EmailSection = () => {
                 type="text"
                 id="subject"
                 required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                className="bg-white/5 border border-white/10 placeholder-white/30 text-white text-sm rounded-lg block w-full p-2.5 focus:ring-purple-500 focus:border-purple-500"
                 placeholder="Just saying hi"
               />
             </div>
@@ -116,13 +110,13 @@ const EmailSection = () => {
               <textarea
                 name="message"
                 id="message"
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                className="bg-white/5 border border-white/10 placeholder-white/30 text-white text-sm rounded-lg block w-full p-2.5 focus:ring-purple-500 focus:border-purple-500"
                 placeholder="Let's talk about..."
               />
             </div>
             <button
               type="submit"
-              className="bg-primary-500 hover:bg-slate-800 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-medium py-2.5 px-5 rounded-lg w-full transition-all duration-300"
             >
               Send Message
             </button>
@@ -134,3 +128,4 @@ const EmailSection = () => {
 };
 
 export default EmailSection;
+

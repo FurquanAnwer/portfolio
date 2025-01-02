@@ -7,15 +7,6 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Holiday Inn",
-    description: "A Hotel Internal Management App built using React.js and Styled Components, with Supabase for backend functionality. It optimizes data fetching with React Query and manages state using Context API.",
-    image: "/images/project_1.png",
-    tag: ["All Projects", "Frontend Projects"],
-    gitUrl: "https://github.com/FurquanAnwer/Hotel-Internal-Management-App",
-    previewUrl: "https://hotel-internal-management-app.vercel.app/login",
-  },
-  {
-    id: 2,
     title: "ShopMart",
     description: "An e-commerce application built using Next.js, featuring a responsive design and user authentication. It includes an Add to Cart functionality, allowing users to easily manage their shopping experience.",
     image: "/images/project_2.png",
@@ -23,15 +14,26 @@ const projectsData = [
     gitUrl: "https://github.com/FurquanAnwer/Shopmart_hiring",
     previewUrl: "https://hiring-challenge-lake.vercel.app",
   },
+  
   {
-    id: 3,
+    id: 2,
     title: "Youtube Clone",
-    description: "A YouTube clone built using React, offering video uploading, viewing, and commenting features in a user-friendly interface. The application utilizes a modern design and efficient state management to enhance the user experience while browsing and interacting with content.",
+    description: "A YouTube clone built using React, offering video searching, video viewing, and commenting features in a user-friendly interface. The application utilizes a modern design and efficient state management to enhance the user experience while browsing and interacting with content.",
     image: "/images/project_3.png",
     tag: ["All Projects", "Frontend Projects"],
     gitUrl: "https://github.com/FurquanAnwer/youtube-clone",
     previewUrl: "https://youtube-clone-lw24.vercel.app/",
   },
+  {
+    id: 3,
+    title: "Holiday Inn",
+    description: "A Hotel Internal Management App built using React.js and Styled Components, with Supabase for backend functionality. It optimizes data fetching with React Query and manages state using Context API.",
+    image: "/images/project_1.png",
+    tag: ["All Projects", "Frontend Projects"],
+    gitUrl: "https://github.com/FurquanAnwer/Hotel-Internal-Management-App",
+    previewUrl: "https://hotel-internal-management-app.vercel.app/login",
+  },
+
   {
     id: 4,
     title: "React Quiz",
@@ -41,7 +43,15 @@ const projectsData = [
     gitUrl: "https://github.com/FurquanAnwer/ReactQuiz",
     previewUrl: "https://react-quiz-bice-ten.vercel.app/",
   },
-
+  {
+    id: 5,
+    title: "Portfolio",
+    description: "A modern personal portfolio built with Next.js, showcasing projects, skills, and experience with a sleek design and fast performance. Fully responsive and optimized for seamless user interaction across all devices.",
+    image: "/images/portfolio.png",
+    tag: ["All Projects", "Frontend Projects"],
+    gitUrl: "https://github.com/FurquanAnwer/portfolio",
+    previewUrl: "https://www.furquananwer.xyz",
+  },
 ];
 
 const ProjectsSection = () => {
