@@ -32,7 +32,7 @@ const projectsData = [
     image: "/images/project_1.png",
     tag: ["All Projects", "Frontend Projects"],
     gitUrl: "https://github.com/FurquanAnwer/Hotel-Internal-Management-App",
-    previewUrl: "https://github.com/FurquanAnwer/Hotel-Internal-Management-App",
+    previewUrl: "https://hotel-internal-management-app.vercel.app/dashboard",
   },
 
   {
