@@ -22,7 +22,7 @@ const projectsData = [
     image: "/images/project_3.png",
     tag: ["All Projects", "Frontend Projects"],
     gitUrl: "https://github.com/FurquanAnwer/youtube-clone",
-    previewUrl: "https://youtube-clone-lw24.vercel.app/",
+    previewUrl: "https://yclone-three.vercel.app/",
   },
   {
     
