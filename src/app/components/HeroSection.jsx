@@ -50,7 +50,7 @@ const HeroSection = () => {
               My Projects
             </Link>
             <Link
-              href="Furquan_Anwer_.pdf"
+              href="Md_Furquan_Anwer.pdf"
               target="_blank"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3"
             >
