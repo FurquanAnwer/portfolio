@@ -63,8 +63,8 @@ const EmailSection = () => {
       </div>
       <div className="glass-card p-6 rounded-lg">
         {emailSubmitted ? (
-          <p className="text-green-500 text-sm mt-2">
-            Email sent successfully!
+          <p className="text-green-500 text-lg mt-2">
+            Email not sent! Subscription expired! Please use my gmail to send emails. Thanks!
           </p>
         ) : (
           <form className="flex flex-col" onSubmit={handleSubmit}>
